@@ -216,10 +216,10 @@
             </objects>
             <point key="canvasLocation" x="690" y="1769"/>
         </scene>
-        <!--View Controller-->
+        <!--Publish DateVC-->
         <scene sceneID="wx7-d9-7iW">
             <objects>
-                <viewController id="Ubg-92-7D4" sceneMemberID="viewController">
+                <viewController id="Ubg-92-7D4" customClass="PublishDateVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kjC-DS-YE8"/>
                         <viewControllerLayoutGuide type="bottom" id="sJ7-Lc-mGT"/>
@@ -232,7 +232,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dW9-f4-yPl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2977" y="1767"/>
+            <point key="canvasLocation" x="2997" y="1767"/>
         </scene>
         <!--Sample Item-->
         <scene sceneID="QKD-PL-Bmy">
