@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>percent</key>
+		<integer>60</integer>
+		<key>imageName</key>
+		<string>tshirt_1</string>
+		<key>price</key>
+		<integer>30</integer>
+		<key>name</key>
+		<string>T-Shirt 1</string>
+	</dict>
+	<dict>
+		<key>percent</key>
+		<integer>40</integer>
+		<key>imageName</key>
+		<string>tshirt_2</string>
+		<key>price</key>
+		<integer>40</integer>
+		<key>name</key>
+		<string>T-Shirt 2</string>
+	</dict>
+	<dict>
+		<key>percent</key>
+		<integer>80</integer>
+		<key>imageName</key>
+		<string>tshirt_3</string>
+		<key>price</key>
+		<integer>45</integer>
+		<key>name</key>
+		<string>T-Shirt 3</string>
+	</dict>
+	<dict>
+		<key>percent</key>
+		<integer>20</integer>
+		<key>imageName</key>
+		<string>tshirt_4</string>
+		<key>price</key>
+		<integer>40</integer>
+		<key>name</key>
+		<string>T-Shirt 40</string>
+	</dict>
+</array>
+</plist>

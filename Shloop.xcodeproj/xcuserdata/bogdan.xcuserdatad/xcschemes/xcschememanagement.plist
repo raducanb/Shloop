@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Shloop.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>ShloopKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>4367AA2419DD226000B5A7F5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4367AA3D19DD226100B5A7F5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4367AAAD19DD72F500B5A7F5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4367AAB719DD72F500B5A7F5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
