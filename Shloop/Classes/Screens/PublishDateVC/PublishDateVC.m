@@ -18,7 +18,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    dateLbl.text = @"Added Date: Thu, 25 Sep 2014 17:16:54";
 }
 
 

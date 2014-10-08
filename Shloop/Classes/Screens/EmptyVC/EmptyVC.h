@@ -1,5 +1,5 @@
 //
-//  PublishDateVC.h
+//  EmptyVC.h
 //  Shloop
 //
 //  Created by Bogdan on 08/10/14.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PublishDateVC : UIViewController {
-    IBOutlet UILabel *dateLbl;
-}
+@interface EmptyVC : UIViewController
 
 @end
