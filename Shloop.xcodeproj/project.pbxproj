@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		434BF7FB19E56E9900D42D8B /* PublishDateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 434BF7FA19E56E9900D42D8B /* PublishDateVC.m */; };
+		434BF7FF19E57C9200D42D8B /* EmptyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 434BF7FE19E57C9200D42D8B /* EmptyVC.m */; };
 		4367AA2B19DD226100B5A7F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4367AA2A19DD226100B5A7F5 /* main.m */; };
 		4367AA3619DD226100B5A7F5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4367AA3519DD226100B5A7F5 /* Images.xcassets */; };
 		4367AA5E19DD22EB00B5A7F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4367AA5119DD22EB00B5A7F5 /* AppDelegate.m */; };
@@ -66,6 +68,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		434BF7F919E56E9900D42D8B /* PublishDateVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublishDateVC.h; sourceTree = "<group>"; };
+		434BF7FA19E56E9900D42D8B /* PublishDateVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublishDateVC.m; sourceTree = "<group>"; };
+		434BF7FD19E57C9100D42D8B /* EmptyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyVC.h; sourceTree = "<group>"; };
+		434BF7FE19E57C9200D42D8B /* EmptyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyVC.m; sourceTree = "<group>"; };
 		4367AA2519DD226000B5A7F5 /* Shloop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shloop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4367AA2919DD226000B5A7F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4367AA2A19DD226100B5A7F5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -126,6 +132,24 @@
 				43B9BB5D19E2676600599130 /* ItemCell.swift */,
 			);
 			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		434BF7F819E56E8900D42D8B /* PublishDateVC */ = {
+			isa = PBXGroup;
+			children = (
+				434BF7F919E56E9900D42D8B /* PublishDateVC.h */,
+				434BF7FA19E56E9900D42D8B /* PublishDateVC.m */,
+			);
+			path = PublishDateVC;
+			sourceTree = "<group>";
+		};
+		434BF7FC19E57C7700D42D8B /* EmptyVC */ = {
+			isa = PBXGroup;
+			children = (
+				434BF7FD19E57C9100D42D8B /* EmptyVC.h */,
+				434BF7FE19E57C9200D42D8B /* EmptyVC.m */,
+			);
+			path = EmptyVC;
 			sourceTree = "<group>";
 		};
 		4367AA1C19DD226000B5A7F5 = {
@@ -224,20 +248,23 @@
 		4367AA5C19DD22EB00B5A7F5 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				4367AA5D19DD22EB00B5A7F5 /* MainVC */,
+				4367AA5D19DD22EB00B5A7F5 /* CategoriesTVC */,
+				434BF7FC19E57C7700D42D8B /* EmptyVC */,
+				434BF7F819E56E8900D42D8B /* PublishDateVC */,
 				7C7F329E19E40AAD006A4CB2 /* ItemDetailsVC */,
-				43CDF8BE19E26DBE004829AF /* ItemsCVC */,
+				43CDF8BE19E26DBE004829AF /* ItemsVC */,
 				4367AA6B19DD35C000B5A7F5 /* TraitOverrideViewController */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
 		};
-		4367AA5D19DD22EB00B5A7F5 /* MainVC */ = {
+		4367AA5D19DD22EB00B5A7F5 /* CategoriesTVC */ = {
 			isa = PBXGroup;
 			children = (
 				4367AA6319DD24EF00B5A7F5 /* CategoriesTVC.h */,
 				4367AA6419DD24EF00B5A7F5 /* CategoriesTVC.m */,
 			);
+			name = CategoriesTVC;
 			path = MainVC;
 			sourceTree = "<group>";
 		};
@@ -306,12 +333,13 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		43CDF8BE19E26DBE004829AF /* ItemsCVC */ = {
+		43CDF8BE19E26DBE004829AF /* ItemsVC */ = {
 			isa = PBXGroup;
 			children = (
 				43CDF8BF19E26DFC004829AF /* ItemsVC.h */,
 				43CDF8C019E26DFC004829AF /* ItemsVC.m */,
 			);
+			name = ItemsVC;
 			path = ItemsCVC;
 			sourceTree = "<group>";
 		};
@@ -462,6 +490,8 @@
 				4367AA5E19DD22EB00B5A7F5 /* AppDelegate.m in Sources */,
 				4367AA6519DD24EF00B5A7F5 /* CategoriesTVC.m in Sources */,
 				4367AA2B19DD226100B5A7F5 /* main.m in Sources */,
+				434BF7FB19E56E9900D42D8B /* PublishDateVC.m in Sources */,
+				434BF7FF19E57C9200D42D8B /* EmptyVC.m in Sources */,
 				43CDF8C119E26DFC004829AF /* ItemsVC.m in Sources */,
 				4367AA6E19DD35D400B5A7F5 /* TraitOverrideVC.m in Sources */,
 				43CDF8C719E271BC004829AF /* ShopItem.swift in Sources */,

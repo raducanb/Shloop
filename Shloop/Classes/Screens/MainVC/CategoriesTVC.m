@@ -27,19 +27,12 @@
     [super viewDidLoad];
     
     [self setupCategories];
-    self.selectedCell = -1;
+//    self.selectedCell = -1;
 }
 
 -(void)dealloc
 {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
-}
-
--(void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-    
-    NSLog(@"viewwillappear");
 }
 
 #pragma mark - Setup
@@ -58,21 +51,22 @@
     }
     
     self.categoriesArray = categsTempMArray;
-    [self.tableView reloadData];
 }
 
 -(void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator
 {
     // Doing this reload because the tableview cells didn't
-    //  resize width correctly when changing orientation. 
-    id<UIViewControllerTransitionCoordinatorContext> a = coordinator;
-    CGFloat duration = a.transitionDuration;
+    //  resize width correctly when changing orientation.
     
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(duration * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:0]
-                      withRowAnimation:UITableViewRowAnimationNone];
-        
-    });
+    // Later Edit: Apparently this was fixed by itself.
+    
+//    id<UIViewControllerTransitionCoordinatorContext> a = coordinator;
+//    CGFloat duration = a.transitionDuration;
+//    
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(duration * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:0]
+//                      withRowAnimation:UITableViewRowAnimationNone];
+//    });
 }
 
 #pragma mark - Utils
@@ -108,7 +102,7 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (self.selectedCell != indexPath.row) {
+//    if (self.selectedCell != indexPath.row) {
         ItemsVC *itemsVC = (ItemsVC *)[self.storyboard instantiateViewControllerWithIdentifier:@"idItemsVC"];
         itemsVC.categoryTitleStr = ((ShopCategory *)self.categoriesArray[indexPath.row]).nameStr;
         
@@ -117,9 +111,9 @@
         //  change the detail vc or push the vc, accordingly.
         [self showDetailViewController:itemsVC
                                 sender:self];
-    }
+//    }
     
-    self.selectedCell = indexPath.row;
+//    self.selectedCell = indexPath.row;
 }
 
 /*

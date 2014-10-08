@@ -13,7 +13,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="160" sectionHeaderHeight="22" sectionFooterHeight="22" id="MYs-Os-Ezz">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.82352941176470584" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" id="o1q-aj-DXg" customClass="CategoryCell">
                                 <autoresizingMask key="autoresizingMask"/>
@@ -184,11 +184,6 @@
                                 </constraints>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="EoL-Dl-WY7"/>
-                                    <barButtonItem title="Publish date" id="cJq-id-tUq">
-                                        <connections>
-                                            <action selector="publishDateBtnPressed:" destination="9lK-SQ-Vp4" id="P4d-Dh-7Ln"/>
-                                        </connections>
-                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>
@@ -208,7 +203,6 @@
                     <connections>
                         <outlet property="itemsCollectionView" destination="WXK-HE-sPV" id="fdy-hR-Q9Z"/>
                         <outlet property="noCategorySelectedLbl" destination="kR7-20-LKS" id="xxo-UR-lzv"/>
-                        <outlet property="publishDateBtn" destination="cJq-id-tUq" id="ONL-G8-gEB"/>
                         <outlet property="toolbar" destination="g3m-Zw-okR" id="Y82-3x-KeH"/>
                     </connections>
                 </viewController>
@@ -216,10 +210,10 @@
             </objects>
             <point key="canvasLocation" x="690" y="1769"/>
         </scene>
-        <!--View Controller-->
+        <!--Publish DateVC-->
         <scene sceneID="wx7-d9-7iW">
             <objects>
-                <viewController id="Ubg-92-7D4" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="idPublishDateVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ubg-92-7D4" customClass="PublishDateVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kjC-DS-YE8"/>
                         <viewControllerLayoutGuide type="bottom" id="sJ7-Lc-mGT"/>
@@ -227,12 +221,31 @@
                     <view key="view" contentMode="scaleToFill" id="ewJ-mm-DEw">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a7G-Ct-qnf">
+                                <rect key="frame" x="16" y="20" width="568" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="xdr-nd-5HW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="a7G-Ct-qnf" firstAttribute="trailing" secondItem="ewJ-mm-DEw" secondAttribute="trailingMargin" id="Dbn-TO-R7F"/>
+                            <constraint firstItem="a7G-Ct-qnf" firstAttribute="leading" secondItem="ewJ-mm-DEw" secondAttribute="leadingMargin" id="Yxz-p8-1DD"/>
+                            <constraint firstItem="a7G-Ct-qnf" firstAttribute="top" secondItem="kjC-DS-YE8" secondAttribute="bottom" id="hy5-ce-biS"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="dateLbl" destination="a7G-Ct-qnf" id="SM4-bQ-3I0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dW9-f4-yPl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2977" y="1767"/>
+            <point key="canvasLocation" x="2292" y="2479"/>
         </scene>
         <!--Sample Item-->
         <scene sceneID="QKD-PL-Bmy">
@@ -338,6 +351,13 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Sample Item" id="tai-63-rrj">
+                        <barButtonItem key="leftBarButtonItem" title="Publish Date" id="5hK-MH-Slu">
+                            <connections>
+                                <segue destination="Ubg-92-7D4" kind="popoverPresentation" identifier="idSeguePresentPublishDate" popoverAnchorView="I7t-EE-9RW" id="l15-J6-ge8">
+                                    <popoverArrowDirection key="popoverArrowDirection" down="YES"/>
+                                </segue>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Done" id="fvg-AF-VCl">
                             <connections>
                                 <action selector="doneBtnPressed:" destination="fe2-r6-PG6" id="DRY-XD-W4L"/>
