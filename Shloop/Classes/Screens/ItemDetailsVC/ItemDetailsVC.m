@@ -10,6 +10,8 @@
 
 @interface ItemDetailsVC ()
 
+@property (nonatomic, strong) NSArray *constraints;
+
 @end
 
 @implementation ItemDetailsVC
@@ -31,6 +33,39 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+#pragma mark - Constraints
+
+- (void)updateConstraintsForTraitCollection:(UITraitCollection *)collection
+{
+    NSDictionary *views = NSDictionaryOfVariableBindings(itemImgView, itemNameLbl, itemPriceLbl, itemDescriptionLbl);
+    
+    NSMutableArray *newConstraints = [NSMutableArray new];
+    if(collection.verticalSizeClass == UIUserInterfaceSizeClassCompact) {
+        [newConstraints addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"|[itemImgView]-[itemNameLbl]-|" options:0 metrics:nil views:views]];
+        [newConstraints addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"[itemImgView]-[itemPriceLbl]-|" options:0 metrics:nil views:views]];
+        [newConstraints addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"[itemImgView]-[itemDescriptionLbl]-|" options:0 metrics:nil views:views]];
+        [newConstraints addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[topLayoutGuide]-[itemNameLbl]-[itemPriceLbl]-[itemDescriptionLbl]" options:0 metrics:nil views:views]];
+        [newConstraints addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[topLayoutGuide][itemImgView]|" options:0 metrics:nil views:views]];
+        [newConstraints addObject:[NSLayoutConstraint constraintWithItem:itemImgView
+                                                               attribute:NSLayoutAttributeWidth
+                                                               relatedBy:NSLayoutRelationEqual
+                                                                  toItem:self.view attribute:NSLayoutAttributeWidth
+                                                              multiplier:0.5 constant:0.0]];
+    } else {
+        [newConstraints addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"|[imageView]|" options:0 metrics:nil views:views]];
+        [newConstraints addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"|-[nameLabel]-|" options:0 metrics:nil views:views]];
+        [newConstraints addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"|-[conversationsLabel]-|" options:0 metrics:nil views:views]];
+        [newConstraints addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"|-[photosLabel]-|" options:0 metrics:nil views:views]];
+        [newConstraints addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[topLayoutGuide]-20-[imageView]-[nameLabel]-[conversationsLabel]-[photosLabel]|" options:0 metrics:nil views:views]];
+    }
+    
+    if (self.constraints) {
+        [self.view removeConstraints:self.constraints];
+    }
+    
+    self.constraints = newConstraints;
+    [self.view addConstraints:self.constraints];
+}
 
 /*
 #pragma mark - Navigation

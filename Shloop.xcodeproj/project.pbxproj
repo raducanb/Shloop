@@ -27,6 +27,7 @@
 		43CDF8C319E26E9C004829AF /* Items.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43CDF8C219E26E9C004829AF /* Items.plist */; };
 		43CDF8C719E271BC004829AF /* ShopItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CDF8C619E271BC004829AF /* ShopItem.swift */; };
 		43CDF8C819E271BC004829AF /* ShopItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CDF8C619E271BC004829AF /* ShopItem.swift */; };
+		43DA31A719E549DA00FBDB29 /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 43DA31A619E549DA00FBDB29 /* UIView+AutoLayout.m */; };
 		43EC90CB19DD78DB0059ED6F /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EC90CA19DD78DB0059ED6F /* CategoryCell.swift */; };
 		43EC90CF19DD792F0059ED6F /* UIImage+ImageEffects.h in Headers */ = {isa = PBXBuildFile; fileRef = 43EC90CD19DD792F0059ED6F /* UIImage+ImageEffects.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		43EC90D019DD792F0059ED6F /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 43EC90CE19DD792F0059ED6F /* UIImage+ImageEffects.m */; };
@@ -90,6 +91,8 @@
 		43CDF8C019E26DFC004829AF /* ItemsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemsVC.m; sourceTree = "<group>"; };
 		43CDF8C219E26E9C004829AF /* Items.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Items.plist; sourceTree = "<group>"; };
 		43CDF8C619E271BC004829AF /* ShopItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopItem.swift; sourceTree = "<group>"; };
+		43DA31A519E549DA00FBDB29 /* UIView+AutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AutoLayout.h"; sourceTree = "<group>"; };
+		43DA31A619E549DA00FBDB29 /* UIView+AutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutoLayout.m"; sourceTree = "<group>"; };
 		43EC90CA19DD78DB0059ED6F /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		43EC90CD19DD792F0059ED6F /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
 		43EC90CE19DD792F0059ED6F /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
@@ -166,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				4367AA4F19DD22EB00B5A7F5 /* AppDelegate */,
+				43DA31A419E549A200FBDB29 /* Categories */,
 				4367AA5219DD22EB00B5A7F5 /* CustomViews */,
 				439B944B19DEC39200DADF79 /* Models */,
 				4367AA5319DD22EB00B5A7F5 /* Resources */,
@@ -311,6 +315,15 @@
 			path = ItemsCVC;
 			sourceTree = "<group>";
 		};
+		43DA31A419E549A200FBDB29 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				43DA31A519E549DA00FBDB29 /* UIView+AutoLayout.h */,
+				43DA31A619E549DA00FBDB29 /* UIView+AutoLayout.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
 		43EC90CC19DD792F0059ED6F /* Categories */ = {
 			isa = PBXGroup;
 			children = (
@@ -453,6 +466,7 @@
 				4367AA6E19DD35D400B5A7F5 /* TraitOverrideVC.m in Sources */,
 				43CDF8C719E271BC004829AF /* ShopItem.swift in Sources */,
 				43B9BB5E19E2676600599130 /* ItemCell.swift in Sources */,
+				43DA31A719E549DA00FBDB29 /* UIView+AutoLayout.m in Sources */,
 				4367AAA519DD619900B5A7F5 /* SplitVCDelegate.m in Sources */,
 				439B944E19DEC3AC00DADF79 /* ShopCategory.swift in Sources */,
 			);
@@ -520,7 +534,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -555,7 +569,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

@@ -9,7 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "Shloop-Swift.h"
 
-@interface ItemDetailsVC : UIViewController
+@interface ItemDetailsVC : UIViewController {
+    IBOutlet UIImageView *itemImgView;
+    IBOutlet UILabel *itemNameLbl;
+    IBOutlet UILabel *itemPriceLbl;
+    IBOutlet UILabel *itemDescriptionLbl;
+}
 
 @property (nonatomic, strong) ShopItem *selectedShopItem;
 

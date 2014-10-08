@@ -11,11 +11,13 @@
 #import "Shloop-Swift.h"
 @import ShloopKit;
 #import "TraitOverrideVC.h"
+#import "UIView+AutoLayout.h"
 
 @interface ItemsVC ()
 
 @property (nonatomic, strong) NSArray *itemsArray;
 @property (nonatomic, strong) UIBarButtonItem *categoriesButtonItem;
+@property (nonatomic, strong) UILabel *headerTitleLbl;
 
 @end
 
@@ -131,13 +133,17 @@ static NSString * const reuseIdentifier = @"ItemCell";
         UICollectionReusableView *view = [collectionView dequeueReusableSupplementaryViewOfKind:kind
                                                                             withReuseIdentifier:@"ItemHeaderView"
                                                                                    forIndexPath:indexPath];
-        UILabel *title = [UILabel new];
-        title.text = [NSString stringWithFormat:@"%lu items", self.itemsArray.count * 2];
-        title.font = [UIFont fontWithName:@"Helvetica" size:17];
-        [title sizeToFit];
-        title.center = view.center;
+//        if (_headerTitleLbl) {
+//            return view;
+//        }
+//        
+//        self.headerTitleLbl = [UILabel new];
+//        self.headerTitleLbl.text = [NSString stringWithFormat:@"%u items", self.itemsArray.count * 2];
+//        self.headerTitleLbl.font = [UIFont fontWithName:@"Helvetica" size:17];
+//        [self.headerTitleLbl sizeToFit];
+//    
+//        [view addSubview:self.headerTitleLbl];
         
-        [view addSubview:title];
         return view;
     }
     
@@ -153,7 +159,10 @@ static NSString * const reuseIdentifier = @"ItemCell";
 - (IBAction)categoriesVCBtnPressed:(UIBarButtonItem *)sender
 {
     UISplitViewController *splitVC = [self splitViewController];
-    splitVC.preferredDisplayMode = UISplitViewControllerDisplayModeAllVisible;
+    [UIView animateWithDuration:0.2
+                     animations:^{
+                         splitVC.preferredDisplayMode = UISplitViewControllerDisplayModeAllVisible;
+                     }];
 }
 
 #pragma mark - NSNotifcationCenter

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D4B55442-7864-416C-AB4D-7758F79F54BA</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Shloop</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6BE88AAFC579C5DE05C02B8BFCE291D03DC1E947</key>
+		<string>https://github.com/raducanb/Shloop.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Shloop.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6BE88AAFC579C5DE05C02B8BFCE291D03DC1E947</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/raducanb/Shloop.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6BE88AAFC579C5DE05C02B8BFCE291D03DC1E947</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6BE88AAFC579C5DE05C02B8BFCE291D03DC1E947</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Shloop</string>
+		</dict>
+	</array>
+</dict>
+</plist>
