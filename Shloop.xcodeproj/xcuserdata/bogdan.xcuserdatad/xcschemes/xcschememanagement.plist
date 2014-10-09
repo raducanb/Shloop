@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Search Similar Item.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>Shloop.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -33,6 +38,11 @@
 			<true/>
 		</dict>
 		<key>4367AAB719DD72F500B5A7F5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>43E34A8019E6D894009CF980</key>
 		<dict>
 			<key>primary</key>
 			<true/>
