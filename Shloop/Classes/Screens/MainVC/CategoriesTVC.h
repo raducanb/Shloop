@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AuthManager.h"
 
-@interface CategoriesTVC : UITableViewController {
+@interface CategoriesTVC : UITableViewController <AuthManagerDelegate> {
 }
 
 @end
