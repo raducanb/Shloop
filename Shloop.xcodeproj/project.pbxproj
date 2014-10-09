@@ -33,6 +33,11 @@
 		43E34A6F19E68546009CF980 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E34A6E19E68546009CF980 /* LocalAuthentication.framework */; };
 		43E34A7719E68789009CF980 /* AuthManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E34A7619E68789009CF980 /* AuthManager.m */; };
 		43E34A7C19E6BA78009CF980 /* CartVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E34A7B19E6BA78009CF980 /* CartVC.m */; };
+		43E34A8719E6D894009CF980 /* ActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E34A8619E6D894009CF980 /* ActionViewController.m */; };
+		43E34A8919E6D894009CF980 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43E34A8819E6D894009CF980 /* MainInterface.storyboard */; };
+		43E34A8C19E6D894009CF980 /* Search Similar Item.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 43E34A8119E6D894009CF980 /* Search Similar Item.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		43E34A9819E6E2ED009CF980 /* Items.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43E34A9719E6E2ED009CF980 /* Items.plist */; };
+		43E34A9A19E6E39A009CF980 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43E34A9919E6E39A009CF980 /* Images.xcassets */; };
 		43EC90CB19DD78DB0059ED6F /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EC90CA19DD78DB0059ED6F /* CategoryCell.swift */; };
 		43EC90CF19DD792F0059ED6F /* UIImage+ImageEffects.h in Headers */ = {isa = PBXBuildFile; fileRef = 43EC90CD19DD792F0059ED6F /* UIImage+ImageEffects.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		43EC90D019DD792F0059ED6F /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 43EC90CE19DD792F0059ED6F /* UIImage+ImageEffects.m */; };
@@ -54,6 +59,20 @@
 			remoteGlobalIDString = 4367AAAD19DD72F500B5A7F5;
 			remoteInfo = ShloopKit;
 		};
+		43E34A8A19E6D894009CF980 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4367AA1D19DD226000B5A7F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43E34A8019E6D894009CF980;
+			remoteInfo = "Search Similar Item";
+		};
+		43E34A8D19E6D895009CF980 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4367AA1D19DD226000B5A7F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43E34A8019E6D894009CF980;
+			remoteInfo = "Search Similar Item";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -66,6 +85,17 @@
 				4367AAC319DD72F500B5A7F5 /* ShloopKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43E34A9219E6D895009CF980 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				43E34A8C19E6D894009CF980 /* Search Similar Item.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -107,6 +137,13 @@
 		43E34A7619E68789009CF980 /* AuthManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthManager.m; sourceTree = "<group>"; };
 		43E34A7A19E6BA78009CF980 /* CartVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartVC.h; sourceTree = "<group>"; };
 		43E34A7B19E6BA78009CF980 /* CartVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartVC.m; sourceTree = "<group>"; };
+		43E34A8119E6D894009CF980 /* Search Similar Item.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Search Similar Item.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		43E34A8419E6D894009CF980 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43E34A8519E6D894009CF980 /* ActionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActionViewController.h; sourceTree = "<group>"; };
+		43E34A8619E6D894009CF980 /* ActionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActionViewController.m; sourceTree = "<group>"; };
+		43E34A8819E6D894009CF980 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		43E34A9719E6E2ED009CF980 /* Items.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Items.plist; sourceTree = "<group>"; };
+		43E34A9919E6E39A009CF980 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		43EC90CA19DD78DB0059ED6F /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		43EC90CD19DD792F0059ED6F /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
 		43EC90CE19DD792F0059ED6F /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
@@ -125,6 +162,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		4367AAAA19DD72F500B5A7F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43E34A7E19E6D894009CF980 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -166,6 +210,7 @@
 			children = (
 				4367AA2719DD226000B5A7F5 /* Shloop */,
 				4367AAAF19DD72F500B5A7F5 /* ShloopKit */,
+				43E34A8219E6D894009CF980 /* Search Similar Item */,
 				4367AA2619DD226000B5A7F5 /* Products */,
 				43E34A7819E68DBB009CF980 /* Frameworks */,
 			);
@@ -176,6 +221,7 @@
 			children = (
 				4367AA2519DD226000B5A7F5 /* Shloop.app */,
 				4367AAAE19DD72F500B5A7F5 /* ShloopKit.framework */,
+				43E34A8119E6D894009CF980 /* Search Similar Item.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -399,6 +445,27 @@
 			path = CartVC;
 			sourceTree = "<group>";
 		};
+		43E34A8219E6D894009CF980 /* Search Similar Item */ = {
+			isa = PBXGroup;
+			children = (
+				43E34A8519E6D894009CF980 /* ActionViewController.h */,
+				43E34A8619E6D894009CF980 /* ActionViewController.m */,
+				43E34A8819E6D894009CF980 /* MainInterface.storyboard */,
+				43E34A9719E6E2ED009CF980 /* Items.plist */,
+				43E34A8319E6D894009CF980 /* Supporting Files */,
+				43E34A9919E6E39A009CF980 /* Images.xcassets */,
+			);
+			path = "Search Similar Item";
+			sourceTree = "<group>";
+		};
+		43E34A8319E6D894009CF980 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				43E34A8419E6D894009CF980 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		43EC90CC19DD792F0059ED6F /* Categories */ = {
 			isa = PBXGroup;
 			children = (
@@ -440,12 +507,15 @@
 				4367AA2219DD226000B5A7F5 /* Frameworks */,
 				4367AA2319DD226000B5A7F5 /* Resources */,
 				4367AAC919DD72F500B5A7F5 /* Embed Frameworks */,
+				43E34A9219E6D895009CF980 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				4367AAC119DD72F500B5A7F5 /* PBXTargetDependency */,
 				4367AAC519DD72F500B5A7F5 /* PBXTargetDependency */,
+				43E34A8B19E6D894009CF980 /* PBXTargetDependency */,
+				43E34A8E19E6D895009CF980 /* PBXTargetDependency */,
 			);
 			name = Shloop;
 			productName = Shloop;
@@ -470,6 +540,23 @@
 			productReference = 4367AAAE19DD72F500B5A7F5 /* ShloopKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		43E34A8019E6D894009CF980 /* Search Similar Item */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43E34A8F19E6D895009CF980 /* Build configuration list for PBXNativeTarget "Search Similar Item" */;
+			buildPhases = (
+				43E34A7D19E6D894009CF980 /* Sources */,
+				43E34A7E19E6D894009CF980 /* Frameworks */,
+				43E34A7F19E6D894009CF980 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Search Similar Item";
+			productName = "Search Similar Item";
+			productReference = 43E34A8119E6D894009CF980 /* Search Similar Item.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -483,6 +570,9 @@
 						CreatedOnToolsVersion = 6.0.1;
 					};
 					4367AAAD19DD72F500B5A7F5 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					43E34A8019E6D894009CF980 = {
 						CreatedOnToolsVersion = 6.0.1;
 					};
 				};
@@ -502,6 +592,7 @@
 			targets = (
 				4367AA2419DD226000B5A7F5 /* Shloop */,
 				4367AAAD19DD72F500B5A7F5 /* ShloopKit */,
+				43E34A8019E6D894009CF980 /* Search Similar Item */,
 			);
 		};
 /* End PBXProject section */
@@ -523,6 +614,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43E34A7F19E6D894009CF980 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43E34A9A19E6E39A009CF980 /* Images.xcassets in Resources */,
+				43E34A8919E6D894009CF980 /* MainInterface.storyboard in Resources */,
+				43E34A9819E6E2ED009CF980 /* Items.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,6 +664,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		43E34A7D19E6D894009CF980 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43E34A8719E6D894009CF980 /* ActionViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -575,6 +684,16 @@
 			isa = PBXTargetDependency;
 			target = 4367AAAD19DD72F500B5A7F5 /* ShloopKit */;
 			targetProxy = 4367AAC419DD72F500B5A7F5 /* PBXContainerItemProxy */;
+		};
+		43E34A8B19E6D894009CF980 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43E34A8019E6D894009CF980 /* Search Similar Item */;
+			targetProxy = 43E34A8A19E6D894009CF980 /* PBXContainerItemProxy */;
+		};
+		43E34A8E19E6D895009CF980 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43E34A8019E6D894009CF980 /* Search Similar Item */;
+			targetProxy = 43E34A8D19E6D895009CF980 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -737,6 +856,42 @@
 			};
 			name = Release;
 		};
+		43E34A9019E6D895009CF980 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GENERATE_PROFILING_CODE = YES;
+				INFOPLIST_FILE = "Search Similar Item/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MACH_O_TYPE = mh_execute;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		43E34A9119E6D895009CF980 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				GENERATE_PROFILING_CODE = YES;
+				INFOPLIST_FILE = "Search Similar Item/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MACH_O_TYPE = mh_execute;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -766,6 +921,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		43E34A8F19E6D895009CF980 /* Build configuration list for PBXNativeTarget "Search Similar Item" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43E34A9019E6D895009CF980 /* Debug */,
+				43E34A9119E6D895009CF980 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
