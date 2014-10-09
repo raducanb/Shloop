@@ -30,6 +30,8 @@
 		43CDF8C719E271BC004829AF /* ShopItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CDF8C619E271BC004829AF /* ShopItem.swift */; };
 		43CDF8C819E271BC004829AF /* ShopItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CDF8C619E271BC004829AF /* ShopItem.swift */; };
 		43DA31A719E549DA00FBDB29 /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 43DA31A619E549DA00FBDB29 /* UIView+AutoLayout.m */; };
+		43E34A6F19E68546009CF980 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E34A6E19E68546009CF980 /* LocalAuthentication.framework */; };
+		43E34A7719E68789009CF980 /* AuthManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E34A7619E68789009CF980 /* AuthManager.m */; };
 		43EC90CB19DD78DB0059ED6F /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EC90CA19DD78DB0059ED6F /* CategoryCell.swift */; };
 		43EC90CF19DD792F0059ED6F /* UIImage+ImageEffects.h in Headers */ = {isa = PBXBuildFile; fileRef = 43EC90CD19DD792F0059ED6F /* UIImage+ImageEffects.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		43EC90D019DD792F0059ED6F /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 43EC90CE19DD792F0059ED6F /* UIImage+ImageEffects.m */; };
@@ -99,6 +101,9 @@
 		43CDF8C619E271BC004829AF /* ShopItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopItem.swift; sourceTree = "<group>"; };
 		43DA31A519E549DA00FBDB29 /* UIView+AutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AutoLayout.h"; sourceTree = "<group>"; };
 		43DA31A619E549DA00FBDB29 /* UIView+AutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutoLayout.m"; sourceTree = "<group>"; };
+		43E34A6E19E68546009CF980 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		43E34A7519E68789009CF980 /* AuthManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthManager.h; sourceTree = "<group>"; };
+		43E34A7619E68789009CF980 /* AuthManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthManager.m; sourceTree = "<group>"; };
 		43EC90CA19DD78DB0059ED6F /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		43EC90CD19DD792F0059ED6F /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
 		43EC90CE19DD792F0059ED6F /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
@@ -111,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43E34A6F19E68546009CF980 /* LocalAuthentication.framework in Frameworks */,
 				4367AAC219DD72F500B5A7F5 /* ShloopKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -158,6 +164,7 @@
 				4367AA2719DD226000B5A7F5 /* Shloop */,
 				4367AAAF19DD72F500B5A7F5 /* ShloopKit */,
 				4367AA2619DD226000B5A7F5 /* Products */,
+				43E34A7819E68DBB009CF980 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -195,6 +202,7 @@
 				4367AA4F19DD22EB00B5A7F5 /* AppDelegate */,
 				43DA31A419E549A200FBDB29 /* Categories */,
 				4367AA5219DD22EB00B5A7F5 /* CustomViews */,
+				43E34A7319E68769009CF980 /* Managers */,
 				439B944B19DEC39200DADF79 /* Models */,
 				4367AA5319DD22EB00B5A7F5 /* Resources */,
 				4367AA5C19DD22EB00B5A7F5 /* Screens */,
@@ -352,6 +360,32 @@
 			path = Categories;
 			sourceTree = "<group>";
 		};
+		43E34A7319E68769009CF980 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				43E34A7419E6877C009CF980 /* AuthManager */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		43E34A7419E6877C009CF980 /* AuthManager */ = {
+			isa = PBXGroup;
+			children = (
+				43E34A7519E68789009CF980 /* AuthManager.h */,
+				43E34A7619E68789009CF980 /* AuthManager.m */,
+			);
+			path = AuthManager;
+			sourceTree = "<group>";
+		};
+		43E34A7819E68DBB009CF980 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43E34A6E19E68546009CF980 /* LocalAuthentication.framework */,
+			);
+			name = Frameworks;
+			path = Shloop/Frameworks;
+			sourceTree = "<group>";
+		};
 		43EC90CC19DD792F0059ED6F /* Categories */ = {
 			isa = PBXGroup;
 			children = (
@@ -489,6 +523,7 @@
 				7C7F32A119E40AE5006A4CB2 /* ItemDetailsVC.m in Sources */,
 				4367AA5E19DD22EB00B5A7F5 /* AppDelegate.m in Sources */,
 				4367AA6519DD24EF00B5A7F5 /* CategoriesTVC.m in Sources */,
+				43E34A7719E68789009CF980 /* AuthManager.m in Sources */,
 				4367AA2B19DD226100B5A7F5 /* main.m in Sources */,
 				434BF7FB19E56E9900D42D8B /* PublishDateVC.m in Sources */,
 				434BF7FF19E57C9200D42D8B /* EmptyVC.m in Sources */,

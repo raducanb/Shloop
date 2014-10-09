@@ -15,6 +15,6 @@ FOUNDATION_EXPORT double ShloopKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char ShloopKitVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <ShloopKit/PublicHeader.h>
-#warning If project doesn't build/run, you should comment this line, build, de-comment and build again. Now it should work.
+#warning If project doesn't build/run because of swift-errors, you should comment this line, build, de-comment and build again. Now it should work.
 //#import "ShloopKit-Swift.h"
 #import <ShloopKit/UIImage+ImageEffects.h>
