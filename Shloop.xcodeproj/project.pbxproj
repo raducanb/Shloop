@@ -32,6 +32,7 @@
 		43DA31A719E549DA00FBDB29 /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 43DA31A619E549DA00FBDB29 /* UIView+AutoLayout.m */; };
 		43E34A6F19E68546009CF980 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E34A6E19E68546009CF980 /* LocalAuthentication.framework */; };
 		43E34A7719E68789009CF980 /* AuthManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E34A7619E68789009CF980 /* AuthManager.m */; };
+		43E34A7C19E6BA78009CF980 /* CartVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E34A7B19E6BA78009CF980 /* CartVC.m */; };
 		43EC90CB19DD78DB0059ED6F /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EC90CA19DD78DB0059ED6F /* CategoryCell.swift */; };
 		43EC90CF19DD792F0059ED6F /* UIImage+ImageEffects.h in Headers */ = {isa = PBXBuildFile; fileRef = 43EC90CD19DD792F0059ED6F /* UIImage+ImageEffects.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		43EC90D019DD792F0059ED6F /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 43EC90CE19DD792F0059ED6F /* UIImage+ImageEffects.m */; };
@@ -104,6 +105,8 @@
 		43E34A6E19E68546009CF980 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 		43E34A7519E68789009CF980 /* AuthManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthManager.h; sourceTree = "<group>"; };
 		43E34A7619E68789009CF980 /* AuthManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthManager.m; sourceTree = "<group>"; };
+		43E34A7A19E6BA78009CF980 /* CartVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartVC.h; sourceTree = "<group>"; };
+		43E34A7B19E6BA78009CF980 /* CartVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartVC.m; sourceTree = "<group>"; };
 		43EC90CA19DD78DB0059ED6F /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		43EC90CD19DD792F0059ED6F /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
 		43EC90CE19DD792F0059ED6F /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
@@ -256,6 +259,7 @@
 		4367AA5C19DD22EB00B5A7F5 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				43E34A7919E6BA67009CF980 /* CartVC */,
 				4367AA5D19DD22EB00B5A7F5 /* CategoriesTVC */,
 				434BF7FC19E57C7700D42D8B /* EmptyVC */,
 				434BF7F819E56E8900D42D8B /* PublishDateVC */,
@@ -384,6 +388,15 @@
 			);
 			name = Frameworks;
 			path = Shloop/Frameworks;
+			sourceTree = "<group>";
+		};
+		43E34A7919E6BA67009CF980 /* CartVC */ = {
+			isa = PBXGroup;
+			children = (
+				43E34A7A19E6BA78009CF980 /* CartVC.h */,
+				43E34A7B19E6BA78009CF980 /* CartVC.m */,
+			);
+			path = CartVC;
 			sourceTree = "<group>";
 		};
 		43EC90CC19DD792F0059ED6F /* Categories */ = {
@@ -523,6 +536,7 @@
 				7C7F32A119E40AE5006A4CB2 /* ItemDetailsVC.m in Sources */,
 				4367AA5E19DD22EB00B5A7F5 /* AppDelegate.m in Sources */,
 				4367AA6519DD24EF00B5A7F5 /* CategoriesTVC.m in Sources */,
+				43E34A7C19E6BA78009CF980 /* CartVC.m in Sources */,
 				43E34A7719E68789009CF980 /* AuthManager.m in Sources */,
 				4367AA2B19DD226100B5A7F5 /* main.m in Sources */,
 				434BF7FB19E56E9900D42D8B /* PublishDateVC.m in Sources */,

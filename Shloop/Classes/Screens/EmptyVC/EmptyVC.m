@@ -31,8 +31,6 @@
     [view addConstraint:[NSLayoutConstraint constraintWithItem:label attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:view attribute:NSLayoutAttributeCenterY multiplier:1.0 constant:0.0]];
     
     self.view = view;
-    
-//    [AuthM authenticateUser];
 }
 
 @end

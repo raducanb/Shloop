@@ -9,8 +9,9 @@
 #import "CategoriesTVC.h"
 #import "Shloop-Bridging-Header.h"
 #import "Shloop-Swift.h"
-@import ShloopKit;
+@import ShloopKit; // Don't change the position of this import. Strage things happen.
 #import "ItemsVC.h"
+#import "CartVC.h"
 
 @interface CategoriesTVC ()
 
@@ -27,7 +28,6 @@
     [super viewDidLoad];
     
     [self setupCategories];
-//    self.selectedCell = -1;
 }
 
 -(void)dealloc
@@ -84,6 +84,14 @@
                           withRowAnimation:UITableViewRowAnimationBottom];
 }
 
+#pragma mark - IBActions
+
+- (IBAction)shoppingCartBtnPressed:(UIBarButtonItem *)sender
+{
+    AuthM.delegate = self;
+    [AuthM authTouchIDWithPasswordFallback:YES];
+}
+
 #pragma mark - UITableViewDelegate & DataSource
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -116,14 +124,23 @@
 //    self.selectedCell = indexPath.row;
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark - AuthManagerDelegate
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(void)authSuccess
+{
+    CartVC *cartVC = [self.storyboard instantiateViewControllerWithIdentifier:@"idCartVC"];
+//    [self showViewController:cartVC sender:self];
+    [self presentViewController:cartVC animated:YES completion:nil];
 }
-*/
+
+-(void)authFailedWithType:(AuthFailType)failType
+{
+    UIAlertView *infoAV = [[UIAlertView alloc] initWithTitle:@"Shloop"
+                                                     message:@"Can't open shopping cart"
+                                                    delegate:nil
+                                           cancelButtonTitle:@"OK"
+                                           otherButtonTitles:nil];
+    [infoAV show];
+}
 
 @end
