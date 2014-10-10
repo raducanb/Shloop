@@ -9,5 +9,8 @@ Shloop (Shop-in-a-Loop) is a demo (Obj-C & Swift) app made in order to emphasize
 - UIVisualEffectView (UIBlurEffect)
 - TouchID
 - Extension
-- Size classes
+- Size classes (for all device sizes and interface change)
 - UIAlertViewStyle
+- PopoverViewController
+
+To do: Today widget, CloudKit.
