@@ -48,7 +48,10 @@
                             reply:^(BOOL success, NSError *error) {
             if (success) {
                 // User authenticated successfully
-                
+                SEL successAuthSel = @selector(authSuccess);
+                if ([self checkDelegateForSelector:successAuthSel]) {
+                    [self.delegate authSuccess];
+                }
             } else {
                 // User didn't authenticated successfully. Look at 'error' for exact reason.
                 if (weakSelf) {

@@ -56,9 +56,9 @@ static NSString * const reuseIdentifier = @"ItemCell";
         itemsCollectionView.hidden = NO;
         noCategorySelectedLbl.hidden = YES;
         
-        if (super.traitCollection.verticalSizeClass == UIUserInterfaceSizeClassCompact) {
+        if (self.traitCollection.horizontalSizeClass == UIUserInterfaceSizeClassRegular) {
             NSMutableArray *toolbarItems = [toolbar.items mutableCopy];
-            [toolbarItems insertObject:self.categoriesButtonItem
+            [toolbarItems insertObject:[self splitViewController].displayModeButtonItem
                                atIndex:0];
             toolbar.items = toolbarItems;
             toolbar.hidden = NO;
@@ -130,6 +130,12 @@ static NSString * const reuseIdentifier = @"ItemCell";
     }
     
     return nil;
+}
+
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    UIViewController *navVC = [self.storyboard instantiateViewControllerWithIdentifier:@"idItemDetailsNC"];
+    [self presentViewController:navVC animated:YES completion:nil];
 }
 
 #pragma mark - IBActions

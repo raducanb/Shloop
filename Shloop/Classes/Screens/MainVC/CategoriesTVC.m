@@ -124,8 +124,6 @@ static NSString *reuseIdentifier = @"CategoryCell";
         [self showDetailViewController:itemsVC
                                 sender:self];
 //    }
-    
-//    self.selectedCell = indexPath.row;
 }
 
 #pragma mark - AuthManagerDelegate
@@ -133,18 +131,21 @@ static NSString *reuseIdentifier = @"CategoryCell";
 -(void)authSuccess
 {
     CartVC *cartVC = [self.storyboard instantiateViewControllerWithIdentifier:@"idCartVC"];
-//    [self showViewController:cartVC sender:self];
     [self presentViewController:cartVC animated:YES completion:nil];
 }
 
 -(void)authFailedWithType:(AuthFailType)failType
 {
-    UIAlertView *infoAV = [[UIAlertView alloc] initWithTitle:@"Shloop"
-                                                     message:@"Can't open shopping cart"
-                                                    delegate:nil
-                                           cancelButtonTitle:@"OK"
-                                           otherButtonTitles:nil];
-    [infoAV show];
+    if (failType != AuthFailTypeUserCancelled) {
+        [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+            UIAlertView *infoAV = [[UIAlertView alloc] initWithTitle:@"Shloop"
+                                                             message:@"Can't open shopping cart"
+                                                            delegate:nil
+                                                   cancelButtonTitle:@"OK"
+                                                   otherButtonTitles:nil];
+            [infoAV show];
+        }];
+    }
 }
 
 @end
