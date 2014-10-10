@@ -13,6 +13,8 @@
 #import "ItemsVC.h"
 #import "CartVC.h"
 
+static NSString *reuseIdentifier = @"CategoryCell";
+
 @interface CategoriesTVC ()
 
 @property (nonatomic, strong) NSArray *categoriesArray;
@@ -26,6 +28,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self.tableView registerNib:[UINib nibWithNibName:@"CategoryCell" bundle:nil] forCellReuseIdentifier:reuseIdentifier];
     
     [self setupCategories];
 }
@@ -101,7 +105,7 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    CategoryCell *tvc = [tableView dequeueReusableCellWithIdentifier:@"CategoryCell"];
+    CategoryCell *tvc = (CategoryCell *)[tableView dequeueReusableCellWithIdentifier:reuseIdentifier];
     
     [tvc setupWithShopCategory:(ShopCategory *)self.categoriesArray[indexPath.row]];
     

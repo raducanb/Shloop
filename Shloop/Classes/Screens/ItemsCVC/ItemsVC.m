@@ -40,6 +40,8 @@ static NSString * const reuseIdentifier = @"ItemCell";
                                                                 target:self
                                                                 action:@selector(categoriesVCBtnPressed:)];
     
+    [itemsCollectionView registerNib:[UINib nibWithNibName:@"ItemCell" bundle:nil] forCellWithReuseIdentifier:reuseIdentifier];
+    
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(displayModeChanged:)
                                                  name:@"PrimaryVCDisplayModeChangeNotification"
@@ -54,7 +56,7 @@ static NSString * const reuseIdentifier = @"ItemCell";
         itemsCollectionView.hidden = NO;
         noCategorySelectedLbl.hidden = YES;
         
-        if (self.traitCollection.verticalSizeClass == UIUserInterfaceSizeClassCompact) {
+        if (super.traitCollection.verticalSizeClass == UIUserInterfaceSizeClassCompact) {
             NSMutableArray *toolbarItems = [toolbar.items mutableCopy];
             [toolbarItems insertObject:self.categoriesButtonItem
                                atIndex:0];

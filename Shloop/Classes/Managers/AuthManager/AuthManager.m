@@ -48,6 +48,7 @@
                             reply:^(BOOL success, NSError *error) {
             if (success) {
                 // User authenticated successfully
+                
             } else {
                 // User didn't authenticated successfully. Look at 'error' for exact reason.
                 if (weakSelf) {
@@ -124,10 +125,10 @@
     
     if (retryAuth) {
         [self authTouchIDWithPasswordFallback:self.isPasswordFallback];
-    } else if (failType != -1) {
+    } else {
         if (showPassAuthIfWanted && self.isPasswordFallback) {
             [self showPasswordAuthFirstTime:YES];
-        } else {
+        } else if(failType != -1) {
             SEL authFailedSel = @selector(authFailedWithType:);
             if ([self checkDelegateForSelector:authFailedSel]) {
                 [self.delegate authFailedWithType:(AuthFailType)failType];
