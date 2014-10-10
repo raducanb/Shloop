@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ItemCell" id="sUY-aX-EIh" customClass="ItemCell">
+            <rect key="frame" x="0.0" y="0.0" width="135" height="193"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="135" height="193"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" image="tshirt_1" translatesAutoresizingMaskIntoConstraints="NO" id="LT5-Up-cAr" userLabel="Image View - item image">
+                        <rect key="frame" x="0.0" y="0.0" width="135" height="137"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="LT5-Up-cAr" secondAttribute="height" multiplier="135:137" id="zpq-yA-dBX"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2dt-pA-wT0">
+                        <rect key="frame" x="0.0" y="142" width="46" height="20"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sfp-wI-Opc">
+                        <rect key="frame" x="0.0" y="164" width="32" height="17"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="LT5-Up-cAr" secondAttribute="bottom" constant="56" id="1dm-9f-dUZ"/>
+                <constraint firstItem="Sfp-wI-Opc" firstAttribute="leading" secondItem="2dt-pA-wT0" secondAttribute="leading" id="Ect-eO-TMS"/>
+                <constraint firstAttribute="trailing" secondItem="LT5-Up-cAr" secondAttribute="trailing" id="HIC-1f-jsF"/>
+                <constraint firstItem="LT5-Up-cAr" firstAttribute="leading" secondItem="sUY-aX-EIh" secondAttribute="leading" id="V4r-jx-OFH"/>
+                <constraint firstItem="LT5-Up-cAr" firstAttribute="leading" secondItem="2dt-pA-wT0" secondAttribute="leading" id="XhH-OU-Oe0"/>
+                <constraint firstItem="LT5-Up-cAr" firstAttribute="top" secondItem="sUY-aX-EIh" secondAttribute="top" id="cdt-sK-3UJ"/>
+                <constraint firstAttribute="centerX" secondItem="LT5-Up-cAr" secondAttribute="centerX" id="cy7-Sq-8Ja"/>
+                <constraint firstItem="2dt-pA-wT0" firstAttribute="top" secondItem="LT5-Up-cAr" secondAttribute="bottom" constant="5" id="mZA-Kj-Tw7"/>
+                <constraint firstItem="Sfp-wI-Opc" firstAttribute="top" secondItem="2dt-pA-wT0" secondAttribute="bottom" constant="2" id="n7g-Rc-BWE"/>
+            </constraints>
+            <connections>
+                <outlet property="itemImageView" destination="LT5-Up-cAr" id="8Ln-2P-4bE"/>
+                <outlet property="nameLbl" destination="2dt-pA-wT0" id="17r-3D-G8R"/>
+                <outlet property="priceLbl" destination="Sfp-wI-Opc" id="NjU-pg-edu"/>
+            </connections>
+            <point key="canvasLocation" x="889.5" y="539.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="tshirt_1" width="137" height="137"/>
+    </resources>
+</document>

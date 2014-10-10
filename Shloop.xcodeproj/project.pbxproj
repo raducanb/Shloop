@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4300425219E7DEE60052D5C7 /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4300425119E7DEE60052D5C7 /* CategoryCell.xib */; };
+		4300425319E7DEE60052D5C7 /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4300425119E7DEE60052D5C7 /* CategoryCell.xib */; };
+		4300425419E7DEE60052D5C7 /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4300425119E7DEE60052D5C7 /* CategoryCell.xib */; };
+		4300425619E7E5370052D5C7 /* ItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4300425519E7E5370052D5C7 /* ItemCell.xib */; };
+		4300425719E7E5370052D5C7 /* ItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4300425519E7E5370052D5C7 /* ItemCell.xib */; };
+		4300425819E7E5370052D5C7 /* ItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4300425519E7E5370052D5C7 /* ItemCell.xib */; };
+		434BF7FB19E56E9900D42D8B /* PublishDateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 434BF7FA19E56E9900D42D8B /* PublishDateVC.m */; };
+		434BF7FF19E57C9200D42D8B /* EmptyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 434BF7FE19E57C9200D42D8B /* EmptyVC.m */; };
 		4367AA2B19DD226100B5A7F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4367AA2A19DD226100B5A7F5 /* main.m */; };
 		4367AA3619DD226100B5A7F5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4367AA3519DD226100B5A7F5 /* Images.xcassets */; };
 		4367AA5E19DD22EB00B5A7F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4367AA5119DD22EB00B5A7F5 /* AppDelegate.m */; };
@@ -28,6 +36,14 @@
 		43CDF8C719E271BC004829AF /* ShopItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CDF8C619E271BC004829AF /* ShopItem.swift */; };
 		43CDF8C819E271BC004829AF /* ShopItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CDF8C619E271BC004829AF /* ShopItem.swift */; };
 		43DA31A719E549DA00FBDB29 /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 43DA31A619E549DA00FBDB29 /* UIView+AutoLayout.m */; };
+		43E34A6F19E68546009CF980 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E34A6E19E68546009CF980 /* LocalAuthentication.framework */; };
+		43E34A7719E68789009CF980 /* AuthManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E34A7619E68789009CF980 /* AuthManager.m */; };
+		43E34A7C19E6BA78009CF980 /* CartVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E34A7B19E6BA78009CF980 /* CartVC.m */; };
+		43E34A8719E6D894009CF980 /* ActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E34A8619E6D894009CF980 /* ActionViewController.m */; };
+		43E34A8919E6D894009CF980 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43E34A8819E6D894009CF980 /* MainInterface.storyboard */; };
+		43E34A8C19E6D894009CF980 /* Search Similar Item.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 43E34A8119E6D894009CF980 /* Search Similar Item.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		43E34A9819E6E2ED009CF980 /* Items.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43E34A9719E6E2ED009CF980 /* Items.plist */; };
+		43E34A9A19E6E39A009CF980 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43E34A9919E6E39A009CF980 /* Images.xcassets */; };
 		43EC90CB19DD78DB0059ED6F /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EC90CA19DD78DB0059ED6F /* CategoryCell.swift */; };
 		43EC90CF19DD792F0059ED6F /* UIImage+ImageEffects.h in Headers */ = {isa = PBXBuildFile; fileRef = 43EC90CD19DD792F0059ED6F /* UIImage+ImageEffects.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		43EC90D019DD792F0059ED6F /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 43EC90CE19DD792F0059ED6F /* UIImage+ImageEffects.m */; };
@@ -49,6 +65,20 @@
 			remoteGlobalIDString = 4367AAAD19DD72F500B5A7F5;
 			remoteInfo = ShloopKit;
 		};
+		43E34A8A19E6D894009CF980 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4367AA1D19DD226000B5A7F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43E34A8019E6D894009CF980;
+			remoteInfo = "Search Similar Item";
+		};
+		43E34A8D19E6D895009CF980 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4367AA1D19DD226000B5A7F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43E34A8019E6D894009CF980;
+			remoteInfo = "Search Similar Item";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -63,9 +93,26 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		43E34A9219E6D895009CF980 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				43E34A8C19E6D894009CF980 /* Search Similar Item.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4300425119E7DEE60052D5C7 /* CategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
+		4300425519E7E5370052D5C7 /* ItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemCell.xib; sourceTree = "<group>"; };
+		434BF7F919E56E9900D42D8B /* PublishDateVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublishDateVC.h; sourceTree = "<group>"; };
+		434BF7FA19E56E9900D42D8B /* PublishDateVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublishDateVC.m; sourceTree = "<group>"; };
+		434BF7FD19E57C9100D42D8B /* EmptyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyVC.h; sourceTree = "<group>"; };
+		434BF7FE19E57C9200D42D8B /* EmptyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyVC.m; sourceTree = "<group>"; };
 		4367AA2519DD226000B5A7F5 /* Shloop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shloop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4367AA2919DD226000B5A7F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4367AA2A19DD226100B5A7F5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -93,6 +140,18 @@
 		43CDF8C619E271BC004829AF /* ShopItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopItem.swift; sourceTree = "<group>"; };
 		43DA31A519E549DA00FBDB29 /* UIView+AutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AutoLayout.h"; sourceTree = "<group>"; };
 		43DA31A619E549DA00FBDB29 /* UIView+AutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutoLayout.m"; sourceTree = "<group>"; };
+		43E34A6E19E68546009CF980 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		43E34A7519E68789009CF980 /* AuthManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthManager.h; sourceTree = "<group>"; };
+		43E34A7619E68789009CF980 /* AuthManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthManager.m; sourceTree = "<group>"; };
+		43E34A7A19E6BA78009CF980 /* CartVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartVC.h; sourceTree = "<group>"; };
+		43E34A7B19E6BA78009CF980 /* CartVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartVC.m; sourceTree = "<group>"; };
+		43E34A8119E6D894009CF980 /* Search Similar Item.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Search Similar Item.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		43E34A8419E6D894009CF980 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43E34A8519E6D894009CF980 /* ActionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActionViewController.h; sourceTree = "<group>"; };
+		43E34A8619E6D894009CF980 /* ActionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActionViewController.m; sourceTree = "<group>"; };
+		43E34A8819E6D894009CF980 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		43E34A9719E6E2ED009CF980 /* Items.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Items.plist; sourceTree = "<group>"; };
+		43E34A9919E6E39A009CF980 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		43EC90CA19DD78DB0059ED6F /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		43EC90CD19DD792F0059ED6F /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
 		43EC90CE19DD792F0059ED6F /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
@@ -105,11 +164,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43E34A6F19E68546009CF980 /* LocalAuthentication.framework in Frameworks */,
 				4367AAC219DD72F500B5A7F5 /* ShloopKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		4367AAAA19DD72F500B5A7F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43E34A7E19E6D894009CF980 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -123,9 +190,29 @@
 			isa = PBXGroup;
 			children = (
 				43EC90CA19DD78DB0059ED6F /* CategoryCell.swift */,
+				4300425119E7DEE60052D5C7 /* CategoryCell.xib */,
 				43B9BB5D19E2676600599130 /* ItemCell.swift */,
+				4300425519E7E5370052D5C7 /* ItemCell.xib */,
 			);
 			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		434BF7F819E56E8900D42D8B /* PublishDateVC */ = {
+			isa = PBXGroup;
+			children = (
+				434BF7F919E56E9900D42D8B /* PublishDateVC.h */,
+				434BF7FA19E56E9900D42D8B /* PublishDateVC.m */,
+			);
+			path = PublishDateVC;
+			sourceTree = "<group>";
+		};
+		434BF7FC19E57C7700D42D8B /* EmptyVC */ = {
+			isa = PBXGroup;
+			children = (
+				434BF7FD19E57C9100D42D8B /* EmptyVC.h */,
+				434BF7FE19E57C9200D42D8B /* EmptyVC.m */,
+			);
+			path = EmptyVC;
 			sourceTree = "<group>";
 		};
 		4367AA1C19DD226000B5A7F5 = {
@@ -133,7 +220,9 @@
 			children = (
 				4367AA2719DD226000B5A7F5 /* Shloop */,
 				4367AAAF19DD72F500B5A7F5 /* ShloopKit */,
+				43E34A8219E6D894009CF980 /* Search Similar Item */,
 				4367AA2619DD226000B5A7F5 /* Products */,
+				43E34A7819E68DBB009CF980 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,6 +231,7 @@
 			children = (
 				4367AA2519DD226000B5A7F5 /* Shloop.app */,
 				4367AAAE19DD72F500B5A7F5 /* ShloopKit.framework */,
+				43E34A8119E6D894009CF980 /* Search Similar Item.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -171,6 +261,7 @@
 				4367AA4F19DD22EB00B5A7F5 /* AppDelegate */,
 				43DA31A419E549A200FBDB29 /* Categories */,
 				4367AA5219DD22EB00B5A7F5 /* CustomViews */,
+				43E34A7319E68769009CF980 /* Managers */,
 				439B944B19DEC39200DADF79 /* Models */,
 				4367AA5319DD22EB00B5A7F5 /* Resources */,
 				4367AA5C19DD22EB00B5A7F5 /* Screens */,
@@ -224,20 +315,24 @@
 		4367AA5C19DD22EB00B5A7F5 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				4367AA5D19DD22EB00B5A7F5 /* MainVC */,
+				43E34A7919E6BA67009CF980 /* CartVC */,
+				4367AA5D19DD22EB00B5A7F5 /* CategoriesTVC */,
+				434BF7FC19E57C7700D42D8B /* EmptyVC */,
+				434BF7F819E56E8900D42D8B /* PublishDateVC */,
 				7C7F329E19E40AAD006A4CB2 /* ItemDetailsVC */,
-				43CDF8BE19E26DBE004829AF /* ItemsCVC */,
+				43CDF8BE19E26DBE004829AF /* ItemsVC */,
 				4367AA6B19DD35C000B5A7F5 /* TraitOverrideViewController */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
 		};
-		4367AA5D19DD22EB00B5A7F5 /* MainVC */ = {
+		4367AA5D19DD22EB00B5A7F5 /* CategoriesTVC */ = {
 			isa = PBXGroup;
 			children = (
 				4367AA6319DD24EF00B5A7F5 /* CategoriesTVC.h */,
 				4367AA6419DD24EF00B5A7F5 /* CategoriesTVC.m */,
 			);
+			name = CategoriesTVC;
 			path = MainVC;
 			sourceTree = "<group>";
 		};
@@ -306,12 +401,13 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		43CDF8BE19E26DBE004829AF /* ItemsCVC */ = {
+		43CDF8BE19E26DBE004829AF /* ItemsVC */ = {
 			isa = PBXGroup;
 			children = (
 				43CDF8BF19E26DFC004829AF /* ItemsVC.h */,
 				43CDF8C019E26DFC004829AF /* ItemsVC.m */,
 			);
+			name = ItemsVC;
 			path = ItemsCVC;
 			sourceTree = "<group>";
 		};
@@ -322,6 +418,62 @@
 				43DA31A619E549DA00FBDB29 /* UIView+AutoLayout.m */,
 			);
 			path = Categories;
+			sourceTree = "<group>";
+		};
+		43E34A7319E68769009CF980 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				43E34A7419E6877C009CF980 /* AuthManager */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		43E34A7419E6877C009CF980 /* AuthManager */ = {
+			isa = PBXGroup;
+			children = (
+				43E34A7519E68789009CF980 /* AuthManager.h */,
+				43E34A7619E68789009CF980 /* AuthManager.m */,
+			);
+			path = AuthManager;
+			sourceTree = "<group>";
+		};
+		43E34A7819E68DBB009CF980 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43E34A6E19E68546009CF980 /* LocalAuthentication.framework */,
+			);
+			name = Frameworks;
+			path = Shloop/Frameworks;
+			sourceTree = "<group>";
+		};
+		43E34A7919E6BA67009CF980 /* CartVC */ = {
+			isa = PBXGroup;
+			children = (
+				43E34A7A19E6BA78009CF980 /* CartVC.h */,
+				43E34A7B19E6BA78009CF980 /* CartVC.m */,
+			);
+			path = CartVC;
+			sourceTree = "<group>";
+		};
+		43E34A8219E6D894009CF980 /* Search Similar Item */ = {
+			isa = PBXGroup;
+			children = (
+				43E34A8519E6D894009CF980 /* ActionViewController.h */,
+				43E34A8619E6D894009CF980 /* ActionViewController.m */,
+				43E34A8819E6D894009CF980 /* MainInterface.storyboard */,
+				43E34A9719E6E2ED009CF980 /* Items.plist */,
+				43E34A8319E6D894009CF980 /* Supporting Files */,
+				43E34A9919E6E39A009CF980 /* Images.xcassets */,
+			);
+			path = "Search Similar Item";
+			sourceTree = "<group>";
+		};
+		43E34A8319E6D894009CF980 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				43E34A8419E6D894009CF980 /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		43EC90CC19DD792F0059ED6F /* Categories */ = {
@@ -365,12 +517,15 @@
 				4367AA2219DD226000B5A7F5 /* Frameworks */,
 				4367AA2319DD226000B5A7F5 /* Resources */,
 				4367AAC919DD72F500B5A7F5 /* Embed Frameworks */,
+				43E34A9219E6D895009CF980 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				4367AAC119DD72F500B5A7F5 /* PBXTargetDependency */,
 				4367AAC519DD72F500B5A7F5 /* PBXTargetDependency */,
+				43E34A8B19E6D894009CF980 /* PBXTargetDependency */,
+				43E34A8E19E6D895009CF980 /* PBXTargetDependency */,
 			);
 			name = Shloop;
 			productName = Shloop;
@@ -395,6 +550,23 @@
 			productReference = 4367AAAE19DD72F500B5A7F5 /* ShloopKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		43E34A8019E6D894009CF980 /* Search Similar Item */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43E34A8F19E6D895009CF980 /* Build configuration list for PBXNativeTarget "Search Similar Item" */;
+			buildPhases = (
+				43E34A7D19E6D894009CF980 /* Sources */,
+				43E34A7E19E6D894009CF980 /* Frameworks */,
+				43E34A7F19E6D894009CF980 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Search Similar Item";
+			productName = "Search Similar Item";
+			productReference = 43E34A8119E6D894009CF980 /* Search Similar Item.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -406,8 +578,12 @@
 				TargetAttributes = {
 					4367AA2419DD226000B5A7F5 = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = 7D58NW9336;
 					};
 					4367AAAD19DD72F500B5A7F5 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					43E34A8019E6D894009CF980 = {
 						CreatedOnToolsVersion = 6.0.1;
 					};
 				};
@@ -427,6 +603,7 @@
 			targets = (
 				4367AA2419DD226000B5A7F5 /* Shloop */,
 				4367AAAD19DD72F500B5A7F5 /* ShloopKit */,
+				43E34A8019E6D894009CF980 /* Search Similar Item */,
 			);
 		};
 /* End PBXProject section */
@@ -437,8 +614,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4367AA6119DD22EB00B5A7F5 /* LaunchScreen.xib in Resources */,
+				4300425219E7DEE60052D5C7 /* CategoryCell.xib in Resources */,
 				43CDF8C319E26E9C004829AF /* Items.plist in Resources */,
 				4367AA3619DD226100B5A7F5 /* Images.xcassets in Resources */,
+				4300425619E7E5370052D5C7 /* ItemCell.xib in Resources */,
 				4367AAA819DD666F00B5A7F5 /* Categories.plist in Resources */,
 				4367AA6219DD22EB00B5A7F5 /* Main.storyboard in Resources */,
 			);
@@ -448,6 +627,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4300425719E7E5370052D5C7 /* ItemCell.xib in Resources */,
+				4300425319E7DEE60052D5C7 /* CategoryCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43E34A7F19E6D894009CF980 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43E34A9A19E6E39A009CF980 /* Images.xcassets in Resources */,
+				43E34A8919E6D894009CF980 /* MainInterface.storyboard in Resources */,
+				4300425819E7E5370052D5C7 /* ItemCell.xib in Resources */,
+				43E34A9819E6E2ED009CF980 /* Items.plist in Resources */,
+				4300425419E7DEE60052D5C7 /* CategoryCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,7 +654,11 @@
 				7C7F32A119E40AE5006A4CB2 /* ItemDetailsVC.m in Sources */,
 				4367AA5E19DD22EB00B5A7F5 /* AppDelegate.m in Sources */,
 				4367AA6519DD24EF00B5A7F5 /* CategoriesTVC.m in Sources */,
+				43E34A7C19E6BA78009CF980 /* CartVC.m in Sources */,
+				43E34A7719E68789009CF980 /* AuthManager.m in Sources */,
 				4367AA2B19DD226100B5A7F5 /* main.m in Sources */,
+				434BF7FB19E56E9900D42D8B /* PublishDateVC.m in Sources */,
+				434BF7FF19E57C9200D42D8B /* EmptyVC.m in Sources */,
 				43CDF8C119E26DFC004829AF /* ItemsVC.m in Sources */,
 				4367AA6E19DD35D400B5A7F5 /* TraitOverrideVC.m in Sources */,
 				43CDF8C719E271BC004829AF /* ShopItem.swift in Sources */,
@@ -484,6 +681,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		43E34A7D19E6D894009CF980 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43E34A8719E6D894009CF980 /* ActionViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -496,6 +701,16 @@
 			isa = PBXTargetDependency;
 			target = 4367AAAD19DD72F500B5A7F5 /* ShloopKit */;
 			targetProxy = 4367AAC419DD72F500B5A7F5 /* PBXContainerItemProxy */;
+		};
+		43E34A8B19E6D894009CF980 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43E34A8019E6D894009CF980 /* Search Similar Item */;
+			targetProxy = 43E34A8A19E6D894009CF980 /* PBXContainerItemProxy */;
+		};
+		43E34A8E19E6D895009CF980 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43E34A8019E6D894009CF980 /* Search Similar Item */;
+			targetProxy = 43E34A8D19E6D895009CF980 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -581,6 +796,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = Shloop/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -597,6 +813,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = Shloop/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -658,6 +875,42 @@
 			};
 			name = Release;
 		};
+		43E34A9019E6D895009CF980 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GENERATE_PROFILING_CODE = YES;
+				INFOPLIST_FILE = "Search Similar Item/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MACH_O_TYPE = mh_execute;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		43E34A9119E6D895009CF980 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				GENERATE_PROFILING_CODE = YES;
+				INFOPLIST_FILE = "Search Similar Item/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MACH_O_TYPE = mh_execute;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -684,6 +937,15 @@
 			buildConfigurations = (
 				4367AAC719DD72F500B5A7F5 /* Debug */,
 				4367AAC819DD72F500B5A7F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43E34A8F19E6D895009CF980 /* Build configuration list for PBXNativeTarget "Search Similar Item" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43E34A9019E6D895009CF980 /* Debug */,
+				43E34A9119E6D895009CF980 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

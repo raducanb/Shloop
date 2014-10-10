@@ -11,7 +11,6 @@
 #import "Shloop-Swift.h"
 @import ShloopKit;
 #import "TraitOverrideVC.h"
-#import "UIView+AutoLayout.h"
 
 @interface ItemsVC ()
 
@@ -41,6 +40,8 @@ static NSString * const reuseIdentifier = @"ItemCell";
                                                                 target:self
                                                                 action:@selector(categoriesVCBtnPressed:)];
     
+    [itemsCollectionView registerNib:[UINib nibWithNibName:@"ItemCell" bundle:nil] forCellWithReuseIdentifier:reuseIdentifier];
+    
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(displayModeChanged:)
                                                  name:@"PrimaryVCDisplayModeChangeNotification"
@@ -53,14 +54,16 @@ static NSString * const reuseIdentifier = @"ItemCell";
     
     if (self.categoryTitleStr || self.categoryTitleStr.length) {
         itemsCollectionView.hidden = NO;
-        toolbar.hidden = NO;
         noCategorySelectedLbl.hidden = YES;
         
-        if (self.traitCollection.verticalSizeClass == UIUserInterfaceSizeClassCompact) {
+        if (super.traitCollection.verticalSizeClass == UIUserInterfaceSizeClassCompact) {
             NSMutableArray *toolbarItems = [toolbar.items mutableCopy];
             [toolbarItems insertObject:self.categoriesButtonItem
                                atIndex:0];
             toolbar.items = toolbarItems;
+            toolbar.hidden = NO;
+        } else {
+            toolbar.hidden = YES;
         }
     }
 }
@@ -102,16 +105,6 @@ static NSString * const reuseIdentifier = @"ItemCell";
     return splitVC;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 #pragma mark <UICollectionViewDataSource>
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
@@ -133,17 +126,6 @@ static NSString * const reuseIdentifier = @"ItemCell";
         UICollectionReusableView *view = [collectionView dequeueReusableSupplementaryViewOfKind:kind
                                                                             withReuseIdentifier:@"ItemHeaderView"
                                                                                    forIndexPath:indexPath];
-//        if (_headerTitleLbl) {
-//            return view;
-//        }
-//        
-//        self.headerTitleLbl = [UILabel new];
-//        self.headerTitleLbl.text = [NSString stringWithFormat:@"%u items", self.itemsArray.count * 2];
-//        self.headerTitleLbl.font = [UIFont fontWithName:@"Helvetica" size:17];
-//        [self.headerTitleLbl sizeToFit];
-//    
-//        [view addSubview:self.headerTitleLbl];
-        
         return view;
     }
     
@@ -151,10 +133,6 @@ static NSString * const reuseIdentifier = @"ItemCell";
 }
 
 #pragma mark - IBActions
-
-- (IBAction)publishDateBtnPressed:(id)sender
-{
-}
 
 - (IBAction)categoriesVCBtnPressed:(UIBarButtonItem *)sender
 {
@@ -174,7 +152,7 @@ static NSString * const reuseIdentifier = @"ItemCell";
     
     NSMutableArray *toolbarItemsMArray = [toolbar.items mutableCopy];
     
-    if (toolbarItemsMArray.count == 3) {
+    if (toolbarItemsMArray.count == 2) {
         [toolbarItemsMArray removeObjectAtIndex:0];
     }
     
@@ -201,8 +179,9 @@ static NSString * const reuseIdentifier = @"ItemCell";
             toolbar.items = itemsMArray;
         }
     } else if (previousTraitCollection.verticalSizeClass == UIUserInterfaceSizeClassRegular) {
+        toolbar.hidden = NO;
         NSMutableArray *itemsMArray = [toolbar.items mutableCopy];
-        if (itemsMArray.count == 3) {
+        if (itemsMArray.count == 2) {
             [itemsMArray removeObjectAtIndex:0];
         }
         

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="idCategoryCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" id="7M6-fC-KSN" customClass="CategoryCell">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="160"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7M6-fC-KSN" id="yBe-pM-IVb">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dresses" translatesAutoresizingMaskIntoConstraints="NO" id="aoO-Wz-Kfz">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="159"/>
+                    </imageView>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FxD-Mt-HVo" userLabel="View - Blur container">
+                        <rect key="frame" x="0.0" y="110" width="600" height="50"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tgT-Xk-9Jw" userLabel="Image View - blur">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XRk-6V-z5O">
+                                <rect key="frame" x="15" y="15" width="56" height="20"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="# items" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XV2-gq-pfo">
+                                <rect key="frame" x="538" y="15" width="47" height="20"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tgT-Xk-9Jw" firstAttribute="leading" secondItem="FxD-Mt-HVo" secondAttribute="leading" id="3d3-nJ-Sc5"/>
+                            <constraint firstAttribute="trailing" secondItem="XV2-gq-pfo" secondAttribute="trailing" constant="15" id="6FX-Zp-qhu"/>
+                            <constraint firstAttribute="trailing" secondItem="tgT-Xk-9Jw" secondAttribute="trailing" id="9KI-CB-dvL"/>
+                            <constraint firstAttribute="bottom" secondItem="XRk-6V-z5O" secondAttribute="bottom" constant="15" id="bhj-Cn-FiR"/>
+                            <constraint firstItem="tgT-Xk-9Jw" firstAttribute="width" secondItem="FxD-Mt-HVo" secondAttribute="width" id="ed6-lP-awp"/>
+                            <constraint firstItem="tgT-Xk-9Jw" firstAttribute="height" secondItem="FxD-Mt-HVo" secondAttribute="height" id="gHO-gm-duu"/>
+                            <constraint firstItem="XRk-6V-z5O" firstAttribute="leading" secondItem="FxD-Mt-HVo" secondAttribute="leading" constant="15" id="gZ6-Ii-aGC"/>
+                            <constraint firstAttribute="centerX" secondItem="tgT-Xk-9Jw" secondAttribute="centerX" id="mGd-7I-wYU"/>
+                            <constraint firstItem="tgT-Xk-9Jw" firstAttribute="top" secondItem="FxD-Mt-HVo" secondAttribute="top" id="t6N-6E-dhr"/>
+                            <constraint firstAttribute="bottom" secondItem="XV2-gq-pfo" secondAttribute="bottom" constant="15" id="yVO-tl-K1W"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="FxD-Mt-HVo" firstAttribute="top" secondItem="yBe-pM-IVb" secondAttribute="topMargin" constant="102" id="JJa-0J-e84"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="FxD-Mt-HVo" secondAttribute="trailing" constant="-8" id="Kf7-5J-AC4"/>
+                    <constraint firstItem="aoO-Wz-Kfz" firstAttribute="leading" secondItem="yBe-pM-IVb" secondAttribute="leadingMargin" constant="-8" id="Mlk-fE-srA"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="aoO-Wz-Kfz" secondAttribute="bottom" constant="-8" id="NeL-QG-hn3"/>
+                    <constraint firstItem="aoO-Wz-Kfz" firstAttribute="top" secondItem="yBe-pM-IVb" secondAttribute="topMargin" constant="-8" id="QzZ-Hy-HUz"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="aoO-Wz-Kfz" secondAttribute="trailing" constant="-8" id="WbX-9J-gQa"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="FxD-Mt-HVo" secondAttribute="bottom" constant="-9" id="bac-Jg-tHS"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="FxD-Mt-HVo" secondAttribute="leading" constant="8" id="nkw-nD-rcH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="backgroundImgView" destination="aoO-Wz-Kfz" id="ftK-sQ-ROJ"/>
+                <outlet property="blurImgView" destination="tgT-Xk-9Jw" id="qWd-BX-mIG"/>
+                <outlet property="categoryNameLbl" destination="XRk-6V-z5O" id="mr1-h5-JM6"/>
+                <outlet property="countLbl" destination="XV2-gq-pfo" id="inN-VC-8po"/>
+            </connections>
+            <point key="canvasLocation" x="797" y="424"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="dresses" width="320" height="160"/>
+    </resources>
+</document>

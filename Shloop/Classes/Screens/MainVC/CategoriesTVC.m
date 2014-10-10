@@ -9,8 +9,11 @@
 #import "CategoriesTVC.h"
 #import "Shloop-Bridging-Header.h"
 #import "Shloop-Swift.h"
-@import ShloopKit;
+@import ShloopKit; // Don't change the position of this import. Strage things happen.
 #import "ItemsVC.h"
+#import "CartVC.h"
+
+static NSString *reuseIdentifier = @"CategoryCell";
 
 @interface CategoriesTVC ()
 
@@ -26,20 +29,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self.tableView registerNib:[UINib nibWithNibName:@"CategoryCell" bundle:nil] forCellReuseIdentifier:reuseIdentifier];
+    
     [self setupCategories];
-    self.selectedCell = -1;
 }
 
 -(void)dealloc
 {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
-}
-
--(void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-    
-    NSLog(@"viewwillappear");
 }
 
 #pragma mark - Setup
@@ -58,21 +55,22 @@
     }
     
     self.categoriesArray = categsTempMArray;
-    [self.tableView reloadData];
 }
 
 -(void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator
 {
     // Doing this reload because the tableview cells didn't
-    //  resize width correctly when changing orientation. 
-    id<UIViewControllerTransitionCoordinatorContext> a = coordinator;
-    CGFloat duration = a.transitionDuration;
+    //  resize width correctly when changing orientation.
     
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(duration * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:0]
-                      withRowAnimation:UITableViewRowAnimationNone];
-        
-    });
+    // Later Edit: Apparently this was fixed by itself.
+    
+//    id<UIViewControllerTransitionCoordinatorContext> a = coordinator;
+//    CGFloat duration = a.transitionDuration;
+//    
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(duration * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:0]
+//                      withRowAnimation:UITableViewRowAnimationNone];
+//    });
 }
 
 #pragma mark - Utils
@@ -90,6 +88,14 @@
                           withRowAnimation:UITableViewRowAnimationBottom];
 }
 
+#pragma mark - IBActions
+
+- (IBAction)shoppingCartBtnPressed:(UIBarButtonItem *)sender
+{
+    AuthM.delegate = self;
+    [AuthM authTouchIDWithPasswordFallback:YES];
+}
+
 #pragma mark - UITableViewDelegate & DataSource
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -99,7 +105,7 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    CategoryCell *tvc = [tableView dequeueReusableCellWithIdentifier:@"CategoryCell"];
+    CategoryCell *tvc = (CategoryCell *)[tableView dequeueReusableCellWithIdentifier:reuseIdentifier];
     
     [tvc setupWithShopCategory:(ShopCategory *)self.categoriesArray[indexPath.row]];
     
@@ -108,7 +114,7 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (self.selectedCell != indexPath.row) {
+//    if (self.selectedCell != indexPath.row) {
         ItemsVC *itemsVC = (ItemsVC *)[self.storyboard instantiateViewControllerWithIdentifier:@"idItemsVC"];
         itemsVC.categoryTitleStr = ((ShopCategory *)self.categoriesArray[indexPath.row]).nameStr;
         
@@ -117,19 +123,28 @@
         //  change the detail vc or push the vc, accordingly.
         [self showDetailViewController:itemsVC
                                 sender:self];
-    }
+//    }
     
-    self.selectedCell = indexPath.row;
+//    self.selectedCell = indexPath.row;
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark - AuthManagerDelegate
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(void)authSuccess
+{
+    CartVC *cartVC = [self.storyboard instantiateViewControllerWithIdentifier:@"idCartVC"];
+//    [self showViewController:cartVC sender:self];
+    [self presentViewController:cartVC animated:YES completion:nil];
 }
-*/
+
+-(void)authFailedWithType:(AuthFailType)failType
+{
+    UIAlertView *infoAV = [[UIAlertView alloc] initWithTitle:@"Shloop"
+                                                     message:@"Can't open shopping cart"
+                                                    delegate:nil
+                                           cancelButtonTitle:@"OK"
+                                           otherButtonTitles:nil];
+    [infoAV show];
+}
 
 @end

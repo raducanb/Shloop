@@ -268,7 +268,7 @@
             
             // Create an image mask from what we've drawn so far
             CGImageRef alphaMask = CGBitmapContextCreateImage(context);
-            UIImage *img = [UIImage imageWithCGImage:alphaMask];
+//            UIImage *img = [UIImage imageWithCGImage:alphaMask];
             
             // Draw a white background (overwriting the previous work)
             [[UIColor whiteColor] setFill];
