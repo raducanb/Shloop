@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4300425219E7DEE60052D5C7 /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4300425119E7DEE60052D5C7 /* CategoryCell.xib */; };
+		4300425319E7DEE60052D5C7 /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4300425119E7DEE60052D5C7 /* CategoryCell.xib */; };
+		4300425419E7DEE60052D5C7 /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4300425119E7DEE60052D5C7 /* CategoryCell.xib */; };
+		4300425619E7E5370052D5C7 /* ItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4300425519E7E5370052D5C7 /* ItemCell.xib */; };
+		4300425719E7E5370052D5C7 /* ItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4300425519E7E5370052D5C7 /* ItemCell.xib */; };
+		4300425819E7E5370052D5C7 /* ItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4300425519E7E5370052D5C7 /* ItemCell.xib */; };
 		434BF7FB19E56E9900D42D8B /* PublishDateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 434BF7FA19E56E9900D42D8B /* PublishDateVC.m */; };
 		434BF7FF19E57C9200D42D8B /* EmptyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 434BF7FE19E57C9200D42D8B /* EmptyVC.m */; };
 		4367AA2B19DD226100B5A7F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4367AA2A19DD226100B5A7F5 /* main.m */; };
@@ -101,6 +107,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4300425119E7DEE60052D5C7 /* CategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
+		4300425519E7E5370052D5C7 /* ItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemCell.xib; sourceTree = "<group>"; };
 		434BF7F919E56E9900D42D8B /* PublishDateVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublishDateVC.h; sourceTree = "<group>"; };
 		434BF7FA19E56E9900D42D8B /* PublishDateVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublishDateVC.m; sourceTree = "<group>"; };
 		434BF7FD19E57C9100D42D8B /* EmptyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyVC.h; sourceTree = "<group>"; };
@@ -182,7 +190,9 @@
 			isa = PBXGroup;
 			children = (
 				43EC90CA19DD78DB0059ED6F /* CategoryCell.swift */,
+				4300425119E7DEE60052D5C7 /* CategoryCell.xib */,
 				43B9BB5D19E2676600599130 /* ItemCell.swift */,
+				4300425519E7E5370052D5C7 /* ItemCell.xib */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -568,6 +578,7 @@
 				TargetAttributes = {
 					4367AA2419DD226000B5A7F5 = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = 7D58NW9336;
 					};
 					4367AAAD19DD72F500B5A7F5 = {
 						CreatedOnToolsVersion = 6.0.1;
@@ -603,8 +614,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4367AA6119DD22EB00B5A7F5 /* LaunchScreen.xib in Resources */,
+				4300425219E7DEE60052D5C7 /* CategoryCell.xib in Resources */,
 				43CDF8C319E26E9C004829AF /* Items.plist in Resources */,
 				4367AA3619DD226100B5A7F5 /* Images.xcassets in Resources */,
+				4300425619E7E5370052D5C7 /* ItemCell.xib in Resources */,
 				4367AAA819DD666F00B5A7F5 /* Categories.plist in Resources */,
 				4367AA6219DD22EB00B5A7F5 /* Main.storyboard in Resources */,
 			);
@@ -614,6 +627,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4300425719E7E5370052D5C7 /* ItemCell.xib in Resources */,
+				4300425319E7DEE60052D5C7 /* CategoryCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -623,7 +638,9 @@
 			files = (
 				43E34A9A19E6E39A009CF980 /* Images.xcassets in Resources */,
 				43E34A8919E6D894009CF980 /* MainInterface.storyboard in Resources */,
+				4300425819E7E5370052D5C7 /* ItemCell.xib in Resources */,
 				43E34A9819E6E2ED009CF980 /* Items.plist in Resources */,
+				4300425419E7DEE60052D5C7 /* CategoryCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -779,6 +796,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = Shloop/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -795,6 +813,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = Shloop/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -929,6 +948,7 @@
 				43E34A9119E6D895009CF980 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

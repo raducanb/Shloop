@@ -41,52 +41,7 @@
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
                                 </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ItemCell" id="wei-Fz-Gtv" customClass="ItemCell">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="123" height="144"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" image="tshirt_1" translatesAutoresizingMaskIntoConstraints="NO" id="l0y-fs-06s" userLabel="Image View - item image">
-                                                    <rect key="frame" x="8" y="2" width="107" height="98"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="98" id="jbX-Tb-2KV"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZe-RF-vch">
-                                                    <rect key="frame" x="8" y="102" width="46" height="20"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5CX-34-9nY">
-                                                    <rect key="frame" x="8" y="124" width="32" height="17"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstItem="5CX-34-9nY" firstAttribute="leading" secondItem="ZZe-RF-vch" secondAttribute="leading" id="D52-6C-m8H"/>
-                                            <constraint firstItem="l0y-fs-06s" firstAttribute="top" secondItem="wei-Fz-Gtv" secondAttribute="topMargin" constant="-6" id="Ge5-hD-Jl5"/>
-                                            <constraint firstItem="l0y-fs-06s" firstAttribute="leading" secondItem="ZZe-RF-vch" secondAttribute="leading" id="Oog-Nw-yzu"/>
-                                            <constraint firstItem="5CX-34-9nY" firstAttribute="top" secondItem="ZZe-RF-vch" secondAttribute="bottom" constant="2" id="Pi7-nP-7mm"/>
-                                            <constraint firstItem="l0y-fs-06s" firstAttribute="trailing" secondItem="wei-Fz-Gtv" secondAttribute="trailingMargin" id="WjS-WO-q6C"/>
-                                            <constraint firstItem="l0y-fs-06s" firstAttribute="leading" secondItem="wei-Fz-Gtv" secondAttribute="leadingMargin" id="qMt-3O-5TH"/>
-                                            <constraint firstItem="ZZe-RF-vch" firstAttribute="top" secondItem="l0y-fs-06s" secondAttribute="bottom" constant="2" id="svP-so-OWI"/>
-                                        </constraints>
-                                        <connections>
-                                            <outlet property="itemImageView" destination="l0y-fs-06s" id="RAa-mo-Dib"/>
-                                            <outlet property="nameLbl" destination="ZZe-RF-vch" id="11x-3m-xYk"/>
-                                            <outlet property="priceLbl" destination="5CX-34-9nY" id="zqL-I4-akc"/>
-                                        </connections>
-                                    </collectionViewCell>
-                                </cells>
+                                <cells/>
                                 <connections>
                                     <outlet property="dataSource" destination="ObA-dk-sSI" id="ith-Hw-auf"/>
                                     <outlet property="delegate" destination="ObA-dk-sSI" id="amJ-JV-LeR"/>
@@ -127,9 +82,6 @@
             <point key="canvasLocation" x="1078" y="178"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="tshirt_1" width="137" height="137"/>
-    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

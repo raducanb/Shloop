@@ -18,20 +18,10 @@ class CategoryCell: UITableViewCell {
     @IBOutlet var categoryNameLbl: UILabel!
     @IBOutlet var countLbl: UILabel!
     
-    override public func layoutSubviews() {
-        super.layoutSubviews()
-        
-    }
-    
     override public func awakeFromNib() {
         super.awakeFromNib()
+        
         setupBlurView()
-    }
-
-    override public func setSelected(selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
     func setupBlurView() {
@@ -45,7 +35,7 @@ class CategoryCell: UITableViewCell {
 //        var visualVibrancyEffectView = UIVisualEffectView(effect: vibrancyEffect) as UIVisualEffectView
 //        visualVibrancyEffectView.contentView.addSubview(categoryNameLbl)
 //        visualVibrancyEffectView.contentView.addSubview(countLbl)
-//
+
 //        visualVibrancyEffectView.sizeToFit()
 //        visualVibrancyEffectView.frame.origin = CGPointZero
 //        visualBlurEffectView.contentView.addSubview(visualVibrancyEffectView)
@@ -55,7 +45,6 @@ class CategoryCell: UITableViewCell {
     
     public func setupWithShopCategory(shopC: ShopCategory) {
         backgroundImgView.image = UIImage(named: shopC.imageNameStr)
-        
         categoryNameLbl.text = shopC.nameStr
         countLbl.text = NSString(format: "%@ items", shopC.countNr)
     }

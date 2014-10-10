@@ -20,12 +20,16 @@ static NSString * const reuseIdentifier = @"ItemCell";
 
 @end
 
+#pragma mark - Life cycle
+    
 @implementation ActionViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     // Get the item[s] we're handling from the extension context.
+    
+    [itemsCollectionView registerNib:[UINib nibWithNibName:@"ItemCell" bundle:nil] forCellWithReuseIdentifier:reuseIdentifier];
     
     [self getInputImage];
 }
