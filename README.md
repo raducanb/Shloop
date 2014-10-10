@@ -13,4 +13,4 @@ Shloop (Shop-in-a-Loop) is a demo (Obj-C & Swift) app made in order to emphasize
 - UIAlertViewStyle
 - PopoverViewController
 
-To do: Today widget, CloudKit.
+TODO: Today widget, CloudKit.
